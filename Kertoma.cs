@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 
 namespace HelloWorld;
 
@@ -6,12 +7,10 @@ public class Kertoma
 {
     public int LaskeKertoma(int luku)
     {
-        int tulos = 0;
-        if (luku > 0)
+        if (luku == 1)
         {
-            tulos = tulos * luku;
-            LaskeKertoma(luku - 1);
-        }
-        return tulos;
+            return luku;}
+
+        return luku * LaskeKertoma(luku - 1);
     }
 }
