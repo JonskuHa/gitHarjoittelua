@@ -7,7 +7,7 @@ namespace HelloWorld
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
-            var a = new Kertoma();
+
         }
     }
 }
