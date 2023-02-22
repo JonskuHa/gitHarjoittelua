@@ -5,9 +5,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Console.ReadLine();
             var a = new Kertoma();
+            Console.WriteLine(a.LaskeKertoma(3));
+            Console.ReadLine();
+
         }
     }
 }
